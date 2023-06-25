@@ -1,0 +1,369 @@
+*{
+    margin:0px;
+    padding: 0px;
+    background-color: #013842;
+    color: #3CA699
+}
+
+body {
+    overflow: hidden;
+}
+
+.full{
+    height: 100vh;
+    width: 100vw;
+    padding: 0vh;
+}
+
+header{
+    display: flex;
+    width: auto;
+    height: 12vh;
+    justify-content: center;
+}
+
+.logo{
+   height: 12vh;
+   width: 20vw;
+   margin-left: 1vw;
+}
+
+.footer{
+    display: flex;
+    height: 3vh;
+    width: 98.5vw;
+    bottom: 0;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    justify-content: space-around;
+    padding: 2vh;
+}
+
+.content {
+    background-image: url('../../public/background.jpg');
+    margin: 0px;
+    display: flex;
+    height: 80vh;
+    width: auto;
+    padding: 1vh;
+    justify-content: space-evenly;
+}
+
+.content Table *{
+    background-color:white;
+    border-width: 0px;
+}
+
+
+td .ant-table-cell .ant-table-cell-row-hover{
+    background-color: #006679;
+}
+
+.ant-btn span{
+    background-color: white;
+}
+
+/*Стиль блока авторизации/регистрации*/
+
+.auth_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth_reg_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 65vh;
+    margin-top: 5vh;
+    padding: 0px;
+}
+.auth_reg_block > *{
+    margin-top: 1vh;
+}
+
+.form_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    min-width: 200px;
+    height: 100%;
+    background-color: #006679;
+    border-radius: 1vh;
+    margin-top: 1vh;
+}
+
+.form_box > *{
+    min-width: 170px;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 3vh;
+}
+
+.form_box *{
+    background: none;
+}
+
+.register_link{
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.register_link:hover{
+    color: aliceblue;
+}
+
+input{
+    padding-left: 10px;
+}
+
+.form_field{
+    width: 100%;
+    height: 100%;
+    background-color: #013842;
+    color:#3CA699;
+    border-color: #3CA699;
+    font-size: 2vh;
+}
+
+.form_field::placeholder{
+    color:#277067;
+    background: none;
+}
+
+.form_field #basic_pass{
+    color:#3CA699;
+    background: none;
+}
+
+.form_field #basic_pass::placeholder{
+    color:#277067;
+    background: none;
+}
+
+
+.form_button{
+    width: 100%;
+    height: 100%;
+    background-color: #013842;
+    color:#3CA699;
+    border-color: none;
+    font-size: 2vh;
+    border-radius: 3vh;
+}
+
+.form_button span{
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.form_button span::after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s; 
+}
+
+.form_button:not(:disabled):hover {
+    background-color: #013842;
+}
+
+.form_button:not(:disabled):hover span{
+    padding-right: 25px;
+}
+
+.form_button:not(:disabled):hover span::after{
+    opacity: 1;
+    right: 0;
+}
+
+.ant-form-item-explain-error{
+    color: yellow;
+}
+
+.all_main_wrapper{
+    margin-top: 2vh;
+    height: 65vh;
+    width: 80vw;
+    border-color: #3CA699;
+    border: solid;
+    border-width: 0.7vh;
+    border-style: outset;
+}
+
+.map *{
+    background: none;
+    width: auto;
+}
+
+.map{
+    height: 65vh;
+    width: 80vw;
+}
+
+.main_link_box{
+    display: flex;
+    justify-content: space-evenly;
+    background: none;
+    margin-top: 2vh;
+}
+
+.link_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 15vh;
+    background-color:#006679;
+    border-radius: 2vh;
+}
+
+.link_wrapper *{
+    background-color: #006679;
+    border-radius: 2vh;
+    text-decoration: none;
+}
+
+.link_icon{
+    background: none;
+    border: none;
+    height: 4vh;
+    width: 4vh;
+}
+
+.main_link{
+    display: none;
+}
+
+.link_wrapper:hover{
+    background-color: #015564;
+}
+
+.link_wrapper:hover *{
+    background-color: #015564;
+}
+
+.link_wrapper:hover .main_link{
+    display: block;
+}
+
+.profile_wrapper{
+    width: 40vw;
+    min-width: none;
+    border-radius: 1vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    min-width: 40vh;
+    min-height: 30vh;
+}
+
+.profile_wrapper *{
+    border-radius: 1vh;
+}
+
+.user_block_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1vh;
+    min-width: 40vh;
+    min-height: 30vh;
+}
+
+.user_block_wrapper > .lists_block{
+    min-height: 40vh;
+}
+
+.user_block{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #006679;
+    width: 30vh;
+    height: 15vh;
+    border-radius: 2vh;
+}
+
+.user_block *{
+    padding-left: 1vh;
+    background: none;
+    font-size: 2vh;
+}
+
+.lists_block{
+    display: flex;
+    justify-content: space-around;
+    min-width: 40vw;
+    min-height: 30vh;
+}
+
+
+.favorites{
+    padding-top: 2vh;
+    padding-right: 1vh;
+    height: 20vh;
+    width: 20vw;
+    margin-left: 1vw;
+}
+
+.favorites .favorites_table .ant-table-title{
+    text-align: center;
+    font-size: 2vh;
+    background-color: #006679;
+}
+
+.black_list{
+    padding-top: 2vh;
+    padding-left: 1vh;
+    height: 20vh;
+    width: 20vw;
+    margin-right: 1vw;
+}
+
+.black_list .black_list_table .ant-table-title{
+    text-align: center;
+    font-size: 2vh;
+    background-color: #006679;
+}
+
+.table_buttons{
+    padding-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.back_button *{
+    background: none;
+}
+
+.ant-modal *{
+    background: none;
+}
+
+.ant-btn-primary:not(:disabled):hover{
+    background: none;
+    border-color: #4096ff;
+}
+
+.ant-btn-primary{
+    border-color: #d9d9d9;
+}
+
+.search_table_wrapper{
+    margin-top: 20vh;
+}
